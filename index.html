@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title> KYC Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h4>Put your KYC information here</h4>
+        <form>
+            First Name: <input type="text" id="firstname" />
+            <br> </br>
+            Last Name: <input type="text" id="lastname" />
+            <br> </br>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" />
+            <br> </br>
+
+
+            <label for="gender">Gender: </label>
+            <input type="radio" id="gender" name="gender" value="male" />Male
+            <input type="radio" id="gender" name="gender" value="female" />Female
+            <br> </br>
+
+            Enter your address:<br>
+            <textarea rows="2" cols="20" id="homeaddress"></textarea>
+            <br> </br>
+
+            <label for="password">Password: </label>
+            <input type="password" id="password" />
+            <br> 
+            <br>
+             <method="post" enctype="multipart/form-data">
+                File name:<input type="file" name="imgfile"><br>
+                <br>
+                <input type="submit" name="submit" value="upload">
+        </form>
+    </center>
+</body>
+
+</html>
