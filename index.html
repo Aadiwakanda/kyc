@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <title> KYC Verification</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    Put your KYC information here
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <form>
+        First Name: <input type="text" id="firstname" name="firstname" placeholder="Your name.." />
+        <br> </br>
+        Last Name: <input type="text" id="lastname" name="lastname" placeholder="Your last name.." />
+        <br> </br>
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" placeholder="Your email.." />
+        <br> </br>
+
+
+        <label for="gender">Gender: </label>
+        <input type="radio" id="gender" name="gender" value="male" />Male
+        <input type="radio" id="gender" name="gender" value="female" />Female
+        <input type="radio" id="gender" name="gender" value="other" />Other
+        <br> </br>
+
+        <label> Address proof </label>
+
+        <select>
+            <option id="Aadhar_card"> Aadhar card
+            </option>
+            <option id="Passport"> Passport
+            </option>
+        </select>
+        <br>
+        <b>*The required pics are either front and back or last and first page</b>
+
+        <br>
+        <input type="file" id="address_proof"><br>
+        <br>
+
+
+        <label> Government ID proof </label>
+        <select>
+            <option value="company_ID"> Company ID card
+            </option>
+            <option value="buissness_info"> Buissness information
+            </option>
+            <option value="collage_id">Collage ID </option>
+        </select>
+
+        <br>
+        <input type="file" name="id_proof" multiple><br>
+        <br>
+
+
+        <label> Your social media handles</label> 
+        <input type="text" id="social_media" placeholder="instagram/facebook/linkden" />
+        <br> </br>
+
+        <label>Correspondance Address Proof</label>
+
+        <select>
+            <option value="rental_agreement"> Rental agreement
+            </option>
+            <option value="electricity_bill"> Electricity Bill
+            </option>
+            <option value="gas_bill">Gas Bill </option>
+        </select>
+        <br>
+        <input type="file" id="address_proof">
+        <br>
+        <br>
+        <input type="submit" name="submit" value="upload">
+        <br>
+    </form>
+</body>
+
+</html>
